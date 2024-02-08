@@ -4,6 +4,7 @@ import { GoComment } from "react-icons/go";
 import { FaShare } from "react-icons/fa";
 import { CiSaveDown2 } from "react-icons/ci";
 import { useState } from "react";
+
 const Post = () => {
     const [count, setCount] = useState(0);
     function decreaseCount(){
@@ -34,15 +35,15 @@ const Post = () => {
                 </div>
             </div>
             <div className="flex justify-start text-gray-500 mr-auto ml-4">
-                <div className="flex p-2 hover:bg-gray-300 hover:cursor-default">
+                <div className="flex p-2 hover:bg-gray-200 hover:cursor-default">
                     <GoComment className="text-lg "></GoComment>
                     <div className="text-sm ml-1 ">21 Comments</div>
                 </div>
-                <div className="flex p-2 hover:bg-gray-300 hover:cursor-default">
+                <div className="flex p-2 hover:bg-gray-200 hover:cursor-default">
                     <FaShare className="text-lg"/>
                     <div className="text-sm ml-1 ">Share</div>
                 </div>
-                <div className="flex p-2 hover:bg-gray-300 hover:cursor-default">
+                <div className="flex p-2 hover:bg-gray-200 hover:cursor-default">
                     <CiSaveDown2 className="text-lg"/>
                     <div className="text-sm ml-1 ">Save</div>
                 </div>

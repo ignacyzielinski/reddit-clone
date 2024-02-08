@@ -14,7 +14,7 @@ const Navbar = () => {
             <BsReddit className="text-5xl text-orange-600 ml-4"/>
             <div className="text-orange-600 text-4xl font-bold ml-2">reddit</div>
             <Dropdown/>
-            <input type="text" placeholder="Search Reddit" className="text-xl ml-4 w-1/2 p-2 rounded-2xl bg-gray-200 border border-gray-400 mr-4"/>
+            <input type="text" placeholder="Search Reddit" className="text-xl ml-4 grow p-2 rounded-2xl bg-gray-100 border border-gray-400 mr-4"/>
             <div className="flex gap-4 text-2xl">
                 <HiOutlineArrowUpRight className="hover:bg-gray-200"/>
                 <IoChatbubbleEllipsesOutline className="hover:bg-gray-200"/>

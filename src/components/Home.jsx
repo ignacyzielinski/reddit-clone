@@ -10,8 +10,9 @@ const Home = () => {
             <div className="p-4 text-sm">
             Your personal Reddit frontpage. Come here to check in with your favorite communities.
             </div>
-            <Button text="Create post" backgroundColor="blue" textColor="white" />
-            <Button text="Create community" backgroundColor="white" textColor="blue" border={true}/>
+            <Button text="Create post" backgroundColor="blue" textColor="white"/>
+            <div className="h-2"></div>
+            <Button text="Create community" backgroundColor="white" textColor="blue" borderColor="blue"/>
         </div>
         
         
