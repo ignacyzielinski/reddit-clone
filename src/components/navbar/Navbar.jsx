@@ -6,6 +6,7 @@ import { IoIosNotificationsOutline } from "react-icons/io";
 import { FaPlus } from "react-icons/fa6";
 import { TfiAnnouncement } from "react-icons/tfi";
 import User from "./User";
+import DropdownSearchBar from "./DropdownSearchBar";
 const Navbar = () => {
 
 
@@ -14,7 +15,7 @@ const Navbar = () => {
             <BsReddit className="text-5xl text-orange-600 ml-4"/>
             <div className="text-orange-600 text-4xl font-bold ml-2">reddit</div>
             <Dropdown/>
-            <input type="text" placeholder="Search Reddit" className="text-xl ml-4 grow p-2 rounded-2xl bg-gray-100 border border-gray-400 mr-4"/>
+            <DropdownSearchBar/>
             <div className="flex gap-4 text-2xl">
                 <HiOutlineArrowUpRight className="hover:bg-gray-200"/>
                 <IoChatbubbleEllipsesOutline className="hover:bg-gray-200"/>

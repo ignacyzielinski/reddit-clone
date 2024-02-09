@@ -14,7 +14,7 @@ const Post = () => {
        setCount(prevCount=>prevCount+1)
     }
     return (
-        <div className="flex bg-white border border-gray-300 w-640 items-center gap-4 px-2 py-4 shadow-md justify-start hover:border-black flex-col mt-2 mb-2">
+        <div className="flex bg-white border border-gray-300 w-640 items-center gap-4 px-2 py-4 shadow-md justify-start hover:border-gray-400 flex-col mt-2 mb-2 rounded-md">
             <div className="flex">
                 <div className="text-center">
                     <div className="mt-1 mb-1 text-lg hover:text-orange-500" > <FaLongArrowAltUp onClick={increaseCount}/></div>

@@ -1,10 +1,27 @@
 import { IoMdHome } from "react-icons/io";
 import { MdKeyboardArrowDown } from "react-icons/md";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Option from "./Option";
 const Dropdown = () => {
 
-    const [isOpen, setIsOpen] = useState(false);
+    const Dropdown = () => {
+        const [isOpen, setIsOpen] = useState(false);
+    
+        useEffect(() => {
+            const handleKeyDown = (event) => {
+                if (event.key === `Escape`) {
+                    setIsOpen(false);
+                }
+            };
+    
+            document.addEventListener('keydown', handleKeyDown);
+    
+            return () => {
+                document.removeEventListener('keydown', handleKeyDown);
+            };
+        }, [isOpen]);
+    
+    
 
     const toggleDropdown = () => {
       setIsOpen(!isOpen);
@@ -12,7 +29,7 @@ const Dropdown = () => {
     return (
         <>
         <div className="flex flex-col relative">
-            <div className={`flex ml-6 items-center p-1 ${isOpen ? '' : 'hover:border hover:border-gray-200'} rounded-md`} onClick={toggleDropdown}>
+            <div className={`flex ml-6 items-center p-1 ${isOpen ? '' : 'hover:border hover:border-gray-200'} rounded-md`} onClick={toggleDropdown} >
                 <IoMdHome className="text-3xl" />
                 <div className="text-md font-bold ml-2 mr-auto">Home</div>
                 <MdKeyboardArrowDown className="ml-36"/>
@@ -38,5 +55,5 @@ const Dropdown = () => {
         </>
     );
 }
-
+}
 export default Dropdown;
