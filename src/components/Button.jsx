@@ -19,7 +19,7 @@ const Button = (props) => {
     const textClass = textColorClass[props.textColor];
 
     return (
-        <div className={`text-center ${backgroundClass} rounded-2xl ${textClass} font-bold font-3xl p-1 hover:opacity-80 mx-4 border border-solid ${borderClass}`}>
+        <div className={`text-center ${backgroundClass} rounded-2xl ${textClass} font-bold font-3xl p-1 hover:opacity-80 mx-4 border border-solid cursor-pointer ${borderClass}`}>
             <div>{props.text}</div>
         </div>
     );

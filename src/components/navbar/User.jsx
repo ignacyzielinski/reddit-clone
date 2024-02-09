@@ -12,13 +12,13 @@ const User = () => {
     return (
         <>
         <div className="flex flex-col relative hover:border-gray-200">
-            <div className="flex ml-6 items-center p-1 hover:border hover:border-gray-200 rounded-md "onClick={toggleDropdown}>
+            <div className="flex ml-6 items-center p-1 hover:border text-sm hover:border-gray-200 border-white border rounded-md "onClick={toggleDropdown}>
                 <img src="./src/img/engineer-head.png" className="w-10"  />
                 <div className="flex flex-col">
                     <div className="text-md font-bold ml-2 mr-auto">username</div>
                     <div className="text-md ml-2 mr-auto">1 karma</div>
                 </div>
-                <MdKeyboardArrowDown className="ml-4"/>
+                <MdKeyboardArrowDown className="ml-20"/>
             </div>
             {isOpen && (
                 

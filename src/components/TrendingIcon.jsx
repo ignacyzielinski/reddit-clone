@@ -21,7 +21,7 @@ const TrendingIcon = ({iconType}) => {
             break;
         case 'top':
             icon=<IoPodiumOutline/>
-            tekst="Trending"
+            tekst="top"
             break;
     }
 // const [clicked, setClicked] = useState(false)
