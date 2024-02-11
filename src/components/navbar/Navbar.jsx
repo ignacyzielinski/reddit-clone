@@ -22,8 +22,8 @@ const Navbar = () => {
                 <IoIosNotificationsOutline className="hover:bg-gray-200"/>
                 <FaPlus className="hover:bg-gray-200"/>
             </div>
-            <div className="flex ml-4 bg-gray-100 p-2 items-center rounded-2xl hover:bg-gray-300">
-                <TfiAnnouncement className="mr-2 "/><div className="font-medium text-sm">Advertise</div>
+            <div className="flex ml-4 bg-gray-100 items-center rounded-full p-2 hover:bg-gray-400">
+                <TfiAnnouncement/>
             </div>
             <div>
                 <User/>

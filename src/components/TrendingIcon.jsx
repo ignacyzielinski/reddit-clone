@@ -24,10 +24,6 @@ const TrendingIcon = ({iconType}) => {
             tekst="top"
             break;
     }
-// const [clicked, setClicked] = useState(false)
-// function clickHandler(){
-//     setClicked(true)
-// }
 
     return (
         <div className="text-2xl flex p-1 hover:bg-gray-100 hover:text-blue-700 cursor-default ">
