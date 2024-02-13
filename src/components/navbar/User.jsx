@@ -8,9 +8,10 @@ import { FaShieldAlt } from "react-icons/fa";
 import { GoTelescope } from "react-icons/go";
 import { CiCircleInfo } from "react-icons/ci";
 import { HiOutlineQuestionMarkCircle } from "react-icons/hi2";
-import { MdKeyboardArrowUp } from "react-icons/md";
 import { TbLicense } from "react-icons/tb";
 import { LuLogOut } from "react-icons/lu";
+
+
 
 import UserOption from "./UserOption";
 const User = () => {
@@ -100,10 +101,11 @@ const User = () => {
                         <div className="flex py-2 hover:bg-gray-200" onClick={toggleMoreOpen}>
                             <CiCircleInfo className="text-xl mx-4"/>
                             <div className="ml-1">More</div>
-                            {!MoreIsOpen ?
-                            <MdKeyboardArrowDown className="text-xl ml-auto mr-4" /> : 
-                            <MdKeyboardArrowUp className="text-xl ml-auto mr-4"/>
-                            }
+                            {!MoreIsOpen ? (
+                                <MdKeyboardArrowDown className="text-xl ml-auto mr-4 transition-transform transform duration-200" />
+                            ) : (
+                                <MdKeyboardArrowDown className="text-xl ml-auto mr-4 transition-transform transform rotate-180 duration-200" />
+                            )}
                         </div>
                         {MoreIsOpen && 
                         <>
@@ -124,9 +126,11 @@ const User = () => {
                             <TbLicense className="text-xl mx-4"/>
                             <div className="ml-1">Terms & Conditions</div>
                             {!TermsIsOpen ?
-                            <MdKeyboardArrowDown className="text-xl ml-auto mr-4" /> : 
-                            <MdKeyboardArrowUp className="text-xl ml-auto mr-4"/>
-                            }
+                            (
+                            <MdKeyboardArrowDown className="text-xl ml-auto mr-4 transition-transform transform duration-200" />
+                            ) : (
+                                <MdKeyboardArrowDown className="text-xl ml-auto mr-4 transition-transform transform rotate-180 duration-200" />
+                            )}
                         </div>
                         {TermsIsOpen && 
                         <>
