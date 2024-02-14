@@ -6,7 +6,7 @@ import { TfiAnnouncement } from "react-icons/tfi";
 const Trending = () => {
     return (
         <>
-        <div className="flex bg-white border border-gray-300 w-640 h-1/4 items-center gap-4 px-2 py-4 shadow-md text-gray-500 rounded-md">
+        <div className="flex bg-white border border-gray-300 w-640 h-14 items-center gap-4 px-2 py-4 shadow-md text-gray-500 rounded-md">
             <TrendingIcon iconType="best"/>
             <TrendingIcon iconType="hot"/>
             <TrendingIcon iconType="new"/>

@@ -7,7 +7,7 @@ const NewPost = () => {
         setHovered(!isHovered)
     }
     return (
-        <div className="flex  bg-white border border-gray-300 w-640 h-1/4 items-center gap-4 px-2 py-1 shadow-md rounded-md">
+        <div className="flex bg-white border border-gray-300 w-640 h-fit items-center gap-4 px-2 py-1 shadow-md rounded-md">
             <img src="./src/img/engineer-head.png" alt="avatar" className="w-14"/>
             <input type="text" placeholder="Create post" className={`bg-gray-100 text-sm p-2 w-4/5 border border-gray-200 rounded-sm focus:outline-none ${isHovered && "border border-blue-500 bg-white"} `} onMouseEnter={HoverHandler} onMouseLeave={HoverHandler} />
             <div className="text-gray-500 flex text-2xl gap-2 ">
