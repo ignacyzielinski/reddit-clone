@@ -8,7 +8,7 @@ import { PiArrowFatDownThin } from "react-icons/pi";
 import { PiArrowFatUpThin } from "react-icons/pi";
 import { BsThreeDots } from "react-icons/bs";
 const Post = (props) => {
-    const [count, setCount] = useState(props.count);
+    const [count, setCount] = useState(parseInt(props.count));
     
     const increaseCount = () => {
         setCount(prevCount => prevCount + 1);
@@ -37,7 +37,6 @@ const Post = (props) => {
                                 <div className="mt-1 text-xl font-bold mb-2 ml-1">{props.title}</div>
                             </div>
                             <div>{props.content}</div>
-                            <div class="gradient"></div>
                         </div>
                     </div>
                     <div className="flex text-gray-500 mr-auto ml-2">
